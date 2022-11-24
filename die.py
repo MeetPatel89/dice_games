@@ -1,4 +1,4 @@
-from random import randint 
+from random import randint, choices
 
 class Die:
     """ A class representing a single die object."""
@@ -6,6 +6,7 @@ class Die:
     def __init__(self, num_sides=6):
         """Assume a six-sided die."""
         self.num_sides = num_sides
+
 
     def fair_die_dist(self):
         uniform_prob = 1/self.num_sides
